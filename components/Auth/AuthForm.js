@@ -2,74 +2,22 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const AuthForm = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [form, setForm] = useState(true);
   
   return (
     <div className="flex bg-white items-center justify-center">
-      <div className="w-full lg:w-3/4 p-6 ">
-        <h1 className="text-lg font-medium tracking-tighter text-center text-gray-800 sm:text-3xl">
-          {form ? "Welcome." : "Sign Up to a new world."}
-        </h1>
-        {form ? (
-          <form  className="mt-6">
-            <div>
-              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id=""
-                placeholder="Your Email "
-                className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-current ring-offset-2"
-                required
-              />
-            </div>
-            <span className="text-secondary-default text-sm font-normal">
-            </span>
-            <div className="mt-4">
-              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
-                Password
-              </label>
-              <input
-                type="password"
-                name="password"
-                id=""
-                placeholder="Your Password"
-                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-current ring-offset-2"
-                required
-              />
-            </div>
-            <span className="text-secondary-default text-sm font-normal">
-            </span>
-            <div className="mt-2 text-right">
-              <a
-                href="#"
-                className="text-sm font-semibold leading-relaxed text-gray-700 hover:text-black focus:text-black"
-              >
-                Forgot Password?
-              </a>
-            </div>
-            <button
-              type="submit"
-              className="w-full flex justify-center items-center  px-4 py-3 mt-6 font-semibold text-white transition duration-500 ease-in-out transform bg-slate-900 rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-lg focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-            >
-                Login
-            </button>
-          </form>
-        ) : (
+      <div className="w-full lg:w-1/2 p-6 ">
+       
           <form className="mt-6">
             <div>
               <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
-                FullName
+                Full Name
               </label>
               <input
                 type="text"
                 name="fullName"
                 id=""
                 placeholder="full name"
-                className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-current ring-offset-2"
+                className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-primary-default ring-offset-2"
                 required
               />
             </div>
@@ -84,51 +32,147 @@ const AuthForm = () => {
                 name="email"
                 id=""
                 placeholder="Your Email "
-                className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-current ring-offset-2"
+                className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-primary-default ring-offset-2"
                 required
               />
             </div>
-            <span className="text-secondary-default text-sm font-normal">
-            </span>
             <div className="mt-4">
               <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
-                Password
+                 Number Phone
               </label>
               <input
-                type="password"
-                name="password"
+                type="tel"
+                name="phone"
                 id=""
-                placeholder="Your Password"
-                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-current ring-offset-2"
+                placeholder="number phone"
+                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-primary-default ring-offset-2"
                 required
               />
             </div>
-            <span className="text-secondary-default text-sm font-normal">
-            </span>
             <div className="mt-4">
               <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
-                Confirme Password
+              ADRESSE
               </label>
               <input
-                type="password"
-                name="cf_password"
+                type="text"
+                name="address"
                 id=""
-                placeholder="Confirm Password"
-                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-current ring-offset-2"
+                placeholder="Adresse"
+                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-primary-default ring-offset-2"
                 required
               />
+            </div>
+            <div className="mt-4">
+              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
+                SECTEUR D'ACTIVITÉ
+              </label>
+              <input
+                type="text"
+                name="SECTEUR D'ACTIVITÉ"
+                id=""
+                placeholder="SECTEUR D'ACTIVITÉ"
+                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-primary-default ring-offset-2"
+                required
+              />
+            </div>
+            <div className="mt-4">
+              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
+                BUDGET 
+              </label>
+              <input
+                type=""
+                name="BUDGET"
+                id=""
+                placeholder="BUDGET"
+                className="w-full px-4 py-2 text-base transition duration-500 ease-in-out transform bg-gray-100 border-transparent rounded-lg text-black focus:border-gray-500 focus:outline-none focus:shadow-lg focus:ring-2 ring-offset-primary-default ring-offset-2"
+                required
+              />
+            </div>
+            <div className="mt-4">
+              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
+              AVEZ-VOUS DÉJÀ IMPORTER DEPUIS LA CHINE OU AUTRES PAYS ? 
+              </label>
+              <div className="flex space-x-2">
+              <div className="flex items-center space-x-2">
+                <label htmlFor="Oui">Oui</label>
+              <input
+                type="radio"
+                className="accent-primary-default"
+                name="q1"
+                id="Oui"
+              />
+              </div>
+              <div className="flex items-center space-x-2">
+                <label htmlFor="Non">Non</label>
+              <input
+                type="radio"
+                name="q1"
+                className="accent-primary-default"
+                id="Non"
+              />
+              </div>
+              </div>
+            </div>
+            <div className="mt-4">
+              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
+              AVEZ-VOUS UNE SOCIÉTÉ AU MAROC ?
+              </label>
+              <div className="flex space-x-2">
+              <div className="flex items-center space-x-2">
+                <label htmlFor="Oui">Oui</label>
+              <input
+                type="radio"
+                name="q1"
+                className="accent-primary-default"
+                id="Oui"
+              />
+              </div>
+              <div className="flex items-center space-x-2">
+                <label htmlFor="Non">Non</label>
+              <input
+                type="radio"
+                name="q1"
+                className="accent-primary-default"
+                id="Non"
+              />
+              </div>
+              </div>
+            </div>
+            <div className="mt-4">
+              <label className="block text-xs font-medium leading-relaxed tracking-tighter text-gray-700">
+              AVEZ-VOUS UNE EXPÉRIENCE DE COMMERCE OFFLINE ?
+              </label>
+              <div className="flex space-x-2">
+              <div className="flex items-center space-x-2">
+                <label htmlFor="Oui">Oui</label>
+              <input
+                type="radio"
+                name="q1"
+                className="accent-primary-default"
+                id="Oui"
+              />
+              </div>
+              <div className="flex items-center space-x-2">
+                <label htmlFor="Non">Non</label>
+              <input
+                type="radio"
+                name="q1"
+                className="accent-primary-default"
+                id="Non"
+              />
+              </div>
+              </div>
             </div>
             <span className="text-secondary-default text-sm font-normal">
             </span>
             <button
               type="submit"
-              className="w-full px-4 py-3 mt-6 font-semibold flex justify-center items-center text-white transition duration-500 ease-in-out transform bg-black rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-lg focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+              className="w-full px-4 py-3 mt-6 font-semibold flex justify-center items-center text-white transition duration-500 ease-in-out transform bg-primary-default rounded-lg hover:bg-gray-800 hover:to-black focus:shadow-lg focus:outline-none focus:ring-2 ring-offset-primary-default ring-offset-2"
             >
                 SignUp
             </button>
           </form>
-        )}
-        {form ? (
+        {/* {form ? (
           <p className="mt-8 text-center">
             Need an account?
             <a
@@ -148,7 +192,7 @@ const AuthForm = () => {
               Log In
             </a>
           </p>
-        )}
+        )} */}
       </div>
     </div>
   );
