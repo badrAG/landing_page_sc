@@ -44,8 +44,8 @@ export default function Home() {
             <button onClick={() =>setShow(true)} className='bg-primary-default text-white md:self-start mt-8 py-3 w-40 px-8 rounded-lg'>Join Now</button>
           </div>
           <div className="flex-1 hidden md:block relative">
-            <img className='w-full object-cover h-full' src="https://storeno.b-cdn.net/stores/2-2022/1644942099892.png" alt="" />
-            <div className="bg-white absolute animate-bounce  top-8 right-48  rounded-lg">
+            <img className='w-full object-cover h-full' src="https://storeno.b-cdn.net/stores/2-2022/1645661967825.png" alt="" />
+            {/* <div className="bg-white absolute animate-bounce  top-8 right-48  rounded-lg">
             <img src="https://storeno.b-cdn.net/stores/2-2022/1644942982852.jpeg" className='rounded-lg w-24 shadow-lg' alt="" />
             </div>
             <div className="bg-white absolute animate-bounce bottom-1 right-20  ">
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
             <div className="bg-white absolute animate-bounce top-48 left-20 ">
             <img src="https://storeno.b-cdn.net/stores/2-2022/1644942982120.png" className='rounded-lg shadow-lg w-24' alt="" />
-            </div>
+            </div> */}
           </div>
        </section>
 
