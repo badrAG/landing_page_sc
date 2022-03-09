@@ -69,18 +69,18 @@ export default function Home() {
         <section className="pt-5 px-14 mt-4 pb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-7 sm:gap-x-3 3xl:flex flex-wrap justify-center">
         <div className="flex-1 relative rounded-xl shadow-xl p-4 bg-white">
                 <img className="absolute -top-1 bg-slate-100 rounded-full -left-1 w-10" src="https://storeno.b-cdn.net/stores/2-2022/1645574443972.png" alt="" />
-                <p className="text-xl text-primary-default ml-6 font-semibold">Advanced filters</p>
+                <p className="text-xl text-primary-default ml-6 font-semibold">Advanced filters <span className="text-sm font-normal text-center text-slate-900">(Advanced Access)</span>  </p>
                 <p className='text-sm font-medium mt-1'>Get a full and detailed access to a wide range of products from thousands of Chinese verified suppliers.</p>
             </div>
             <div className="flex-1 relative rounded-xl shadow-xl p-4 bg-white">
                 <img className="absolute -top-1 bg-slate-100 rounded-full -left-1 w-10" src="https://storeno.b-cdn.net/stores/2-2022/1645575448107.png" alt="" />
-                <p className="text-xl text-primary-default ml-6 font-semibold">Personalized Discovery</p>
+                <p className="text-xl text-primary-default ml-6 font-semibold">Personalized Discovery <span className="text-sm font-normal text-center text-slate-900">( Step by Step Guide  )</span> </p>
                 <p className='text-sm font-medium mt-1'>
                 Get a step by step personalized guidance , our specialized team assures to provide you with the most comprehensive accompagnement during the whole process of importation. </p>
             </div>
             <div className="flex-1 relative rounded-xl shadow-xl p-4 bg-white">
                 <img className="absolute -top-1 bg-slate-100 rounded-full -left-1 w-10" src="https://storeno.b-cdn.net/stores/2-2022/1645575568019.png" alt="" />
-                <p className="text-xl text-primary-default ml-6 font-semibold">Purchase</p>
+                <p className="text-xl text-primary-default ml-6 font-semibold">Purchase <span className="text-sm font-normal text-center text-slate-900">( Customer-oriented Platform ) </span> </p>
                 <p className='text-sm font-medium mt-1'>We aspire to make 86212 your one stop platform to all of your purchases from China . </p>
             </div>
         </section>
